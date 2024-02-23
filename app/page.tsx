@@ -15,14 +15,14 @@ export default function Home() {
           </h1>
         </header>
         <section className="bg-slate-950/50 relative h-96">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="flex flex-col items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h1 className="text-5xl font-semibold text-center">
               Люблю Космос за то, что там даже пыль — звездная…
             </h1>
-            <div className="absolute inset-x-20 -bottom-1 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-            <div className="absolute inset-x-20 -bottom-1 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-            <div className="absolute inset-x-60 -bottom-1 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-            <div className="absolute inset-x-60 -bottom-1 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+            <div className="absolute  -bottom-1 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+            <div className="absolute  -bottom-1 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+            <div className="absolute  -bottom-1 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+            <div className="absolute  -bottom-1 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
           </div>
 
           <SparklesCore
