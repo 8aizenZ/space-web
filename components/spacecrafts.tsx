@@ -25,7 +25,7 @@ const spacecrafts = [
   },
   {
     title: "Луна-1",
-    description: "советская автоматическая межпланетная станция",
+    description: "Cоветская автоматическая межпланетная станция",
     image: Luna1,
     content: (
       <p className="text-xl text-slate-950 font-extrabold p-4 ">
@@ -43,7 +43,7 @@ const spacecrafts = [
   },
   {
     title: "Вояджер-1",
-    description: "американский космический зонд",
+    description: "Американский космический зонд",
     image: Voyager,
     content: (
       <p className="text-xl text-slate-950 font-extrabold p-4">
@@ -59,7 +59,7 @@ const spacecrafts = [
   },
   {
     title: "Галилео",
-    description: "автоматический космический аппарат",
+    description: "Автоматический космический аппарат",
     image: Glileo,
     content: (
       <p className="text-xl text-slate-950 font-extrabold p-4">
@@ -78,7 +78,7 @@ const spacecrafts = [
   {
     title: "Паркер",
     description:
-      "автоматический космический аппарат НАСА для изучения внешней короны Солнца",
+      "Автоматический космический аппарат НАСА для изучения внешней короны Солнца",
     image: ParkerZond,
     content: (
       <p className="text-xl text-slate-950 font-extrabold p-4">
@@ -97,7 +97,7 @@ const spacecrafts = [
   },
   {
     title: "Пионер-Венера-2",
-    description: " автоматическая межпланетная станция",
+    description: " Автоматическая межпланетная станция",
     image: PionerVenera2,
     content: (
       <p className="text-xl text-slate-950 font-extrabold p-4">
@@ -122,6 +122,7 @@ export default function Spacecrafts() {
     <div className="bg-slate-200 rounded-b-xl grid auto-rows-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 z-10 px-4 pb-10">
       {spacecrafts.map(({ content, description, image, title }) => (
         <Spacecraft
+          key={title}
           title={title}
           description={description}
           image={image}
