@@ -35,14 +35,14 @@ export default function Home() {
             particleColor="#FFFFFF"
           />
         </section>
-        
+
         <section className="backdrop-blur-2xl p-4 bg-slate-100 flex justify-center items-center ">
-          <h1 className="text-xl text-slate-950 py-10">
+          <p className="text-xl text-slate-950 py-10">
             На нашем сайте вы найдете информацию о самых знаменитых космических
             аппаратах, таких как &quot;Аполлон-11&quot;, который доставил людей
             на поверхность Луны, и &quot;Вояджер-1&quot;, который продолжает
-            исследовать через свои путешествия границы Солнечной системы. 
-          </h1>
+            исследовать через свои путешествия границы Солнечной системы.
+          </p>
         </section>
         <Spacecrafts />
         <section className="backdrop-blur-2xl p-4 bg-slate-100 flex justify-center items-center rounded-t-2xl">
@@ -51,7 +51,7 @@ export default function Home() {
           </h1>
         </section>
         <section className="backdrop-blur-2xl p-4 bg-slate-200 flex justify-center items-center">
-          <h1 className="text-xl text-slate-950 py-10">
+          <h1 className="text-xl text-slate-950 whitespace-pre-wrap px-4 prose">
             Цилковский Константин Эдуадович — российский и советский
             учёный-самоучка, разрабатывавший теоретические вопросы космонавтики,
             мыслитель эзотерической ориентации, занимавшийся философскими
@@ -68,12 +68,12 @@ export default function Home() {
           </h1>
         </section>
         <section className="backdrop-blur-2xl p-4 bg-slate-100 flex justify-center items-center mt-20 rounded-t-2xl">
-          <h1 className="text-xl font-extrabold text-slate-950 py-10">
+          <h1 className="text-2xl font-extrabold text-slate-950 py-4">
             Что же нас ждет в будущем?
           </h1>
         </section>
         <section className="backdrop-blur-2xl p-4 bg-slate-200 flex justify-center items-center">
-          <h1 className="text-xl text-slate-950 py-10">
+          <p className="text-xl text-slate-950 whitespace-pre-wrap px-4 prose">
             В будущем космические аппараты будут продолжать играть важную роль в
             исследовании космоса и понимании нашей Вселенной. Постоянно
             развивающиеся технологии и научные достижения позволят создавать
@@ -86,7 +86,7 @@ export default function Home() {
             технологических достижений, а также от политических и экономических
             факторов. Все эти аспекты могут повлиять на направление и масштабы
             развития космической индустрии.
-          </h1>
+          </p>
         </section>
       </div>
       <Image
