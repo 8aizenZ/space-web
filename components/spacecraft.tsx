@@ -5,7 +5,15 @@ import Image from "next/image";
 import { ReactNode, useState } from "react";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
-import { ScrollArea } from "./ui/scroll-area";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function Spacecraft({
   title,
@@ -51,9 +59,20 @@ export default function Spacecraft({
             translateZ={20}
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
           >
-            <Button variant="secondary" onClick={() => setShow(!show)}>
-              {show ? "Скрыть" : "Подробнее →"}
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="secondary">Подробнее →</Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[425px]">
+                <DialogHeader>
+                  <DialogTitle>{title}</DialogTitle>
+                  <DialogDescription>
+                    
+                  </DialogDescription>
+                </DialogHeader>
+                  {content}
+              </DialogContent>
+            </Dialog>
           </CardItem>
         </div>
       </CardBody>
