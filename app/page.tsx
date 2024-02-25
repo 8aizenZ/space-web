@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Cosmos from "@/app/pictures/cosmos.jpeg";
 import { SparklesCore } from "@/components/sparkles";
-import Spacecrafts from "./spacecrafts";
+import Spacecrafts from "../components/spacecrafts";
+import React from "react";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
             particleColor="#FFFFFF"
           />
         </section>
+        
         <section className="backdrop-blur-2xl p-4 bg-slate-100 flex justify-center items-center ">
           <h1 className="text-xl text-slate-950 py-10">
             На нашем сайте вы найдете информацию о самых знаменитых космических
@@ -69,7 +71,9 @@ export default function Home() {
           </h1>
         </section>
         <section className="backdrop-blur-2xl p-4 bg-slate-100 flex justify-center items-center mt-20 rounded-t-2xl">
-          <h1 className="text-xl font-extrabold text-slate-950 py-10">Что же нас ждет в будущем?</h1>
+          <h1 className="text-xl font-extrabold text-slate-950 py-10">
+            Что же нас ждет в будущем?
+          </h1>
         </section>
         <section className="backdrop-blur-2xl p-4 bg-slate-200 flex justify-center items-center">
           <h1 className="text-xl text-slate-950 py-10">
