@@ -51,7 +51,7 @@ export default function Home() {
           </h1>
         </section>
         <section className="backdrop-blur-2xl p-4 bg-slate-200 flex justify-center items-center">
-          <h1 className="text-xl text-slate-950 whitespace-pre-wrap px-4 prose">
+          <h1 className="text-base md:text-xl text-slate-950 whitespace-pre-wrap px-4 prose">
             Цилковский Константин Эдуадович — российский и советский
             учёный-самоучка, разрабатывавший теоретические вопросы космонавтики,
             мыслитель эзотерической ориентации, занимавшийся философскими
@@ -73,7 +73,7 @@ export default function Home() {
           </h1>
         </section>
         <section className="backdrop-blur-2xl p-4 bg-slate-200 flex justify-center items-center">
-          <p className="text-xl text-slate-950 whitespace-pre-wrap px-4 prose">
+          <p className="text-base md:text-xl text-slate-950 whitespace-pre-wrap px-4 prose">
             В будущем космические аппараты будут продолжать играть важную роль в
             исследовании космоса и понимании нашей Вселенной. Постоянно
             развивающиеся технологии и научные достижения позволят создавать
