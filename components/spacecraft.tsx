@@ -1,7 +1,11 @@
+"use client";
 import { CardBody, CardContainer, CardItem } from "@/components/3d-card";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
+import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
+import { ScrollArea } from "./ui/scroll-area";
 
 export default function Spacecraft({
   title,
@@ -14,6 +18,7 @@ export default function Spacecraft({
   content: ReactNode;
   image: StaticImport;
 }) {
+  const [show, setShow] = useState(false);
   return (
     <CardContainer className="inter-var h-full">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] rounded-xl h-full p-6 border">
@@ -30,20 +35,25 @@ export default function Spacecraft({
         >
           {description}
         </CardItem>
-        <CardItem translateZ="100" className="w-full mt-4">
+        <CardItem translateZ="100" className="relative w-full mt-4">
+          {show && <div className="h-60 absolute z-20">{content}</div>}
           <Image
             src={image}
-            className="h-60 max-w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            className={cn(
+              "h-60 max-w-full object-cover rounded-xl group-hover/card:shadow-xl",
+              show && "brightness-50"
+            )}
             alt="thumbnail"
           />
         </CardItem>
         <div className="flex items-center mt-8">
           <CardItem
             translateZ={20}
-            as="button"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
           >
-            Подробнее →
+            <Button variant="secondary" onClick={() => setShow(!show)}>
+              {show ? "Скрыть" : "Подробнее →"}
+            </Button>
           </CardItem>
         </div>
       </CardBody>
