@@ -37,21 +37,18 @@ export default function Home() {
         </section>
 
         <section className="backdrop-blur-2xl p-4 bg-slate-100 flex justify-center items-center ">
-          <p className="text-xl text-slate-950 py-10">
-            На нашем сайте вы найдете информацию о самых знаменитых космических
-            аппаратах, таких как &quot;Аполлон-11&quot;, который доставил людей
-            на поверхность Луны, и &quot;Вояджер-1&quot;, который продолжает
-            исследовать через свои путешествия границы Солнечной системы.
-          </p>
+          <h1 className="text-3xl font-extrabold text-slate-950 py-10 text-center px-5 prose">
+           Космические аппараты
+           </h1>
         </section>
         <Spacecrafts />
-        <section className="backdrop-blur-2xl p-4 bg-slate-100 flex justify-center items-center rounded-t-2xl">
-          <h1 className="text-xl font-extrabold text-slate-950 py-10">
+        <section className="backdrop-blur-2xl p-4 bg-slate-100 flex justify-center items-center rounded-t-2xl mt-10">
+          <h1 className="text-2xl font-extrabold text-slate-950 py-10">
             Кто же придумал космические аппараты?
           </h1>
         </section>
         <section className="backdrop-blur-2xl p-4 bg-slate-200 flex justify-center items-center">
-          <h1 className="text-base md:text-xl text-slate-950 whitespace-pre-wrap px-4 prose">
+          <p className="text-base md:text-xl text-slate-950 whitespace-pre-wrap px-4 prose ">
             Цилковский Константин Эдуадович — российский и советский
             учёный-самоучка, разрабатывавший теоретические вопросы космонавтики,
             мыслитель эзотерической ориентации, занимавшийся философскими
@@ -65,9 +62,9 @@ export default function Home() {
             фантастических задач. Множество исследователей, в том числе Я.
             Перельман, характеризовали Циолковского как мыслителя, существенно
             опередившего своё время
-          </h1>
+          </p>
         </section>
-        <section className="backdrop-blur-2xl p-4 bg-slate-100 flex justify-center items-center mt-20 rounded-t-2xl">
+        <section className="backdrop-blur-2xl p-4 bg-slate-100 flex justify-center items-center">
           <h1 className="text-2xl font-extrabold text-slate-950 py-4">
             Что же нас ждет в будущем?
           </h1>
